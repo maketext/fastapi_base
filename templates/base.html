@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>FastAPI | {{ title }}</title>
+
+	<style>
+        body { font-family: sans-serif; margin: 20px; }
+        .content { border: 1px solid #ccc; padding: 15px; margin-top: 15px; }
+        .item-list { list-style: none; padding: 0; }
+        .item-list li { margin-bottom: 5px; }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <h1>FastAPI Jinja2 예제</h1>
+    </header>
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        <p>현재 시각: {{ current_time }}</p>
+    </footer>
+
+</body>
+</html>

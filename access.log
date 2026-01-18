@@ -1,0 +1,2 @@
+127.0.0.1 - - [23/Dec/2025:10:16:42 +0900] "GET / HTTP/1.1" - - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0"
+127.0.0.1 - - [23/Dec/2025:10:16:43 +0900] "GET /favicon.ico HTTP/1.1" - - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0"

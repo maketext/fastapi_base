@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>환영합니다, {{ user.username }}님!</h2>
+
+    {% if user.status == "Online" %}
+        <p style="color: green;">현재 {{ user.status }} 상태입니다.</p>
+    {% else %}
+        <p style="color: red;">현재 오프라인입니다.</p>
+    {% endif %}
+
+    <h3>보유 아이템 목록 (반복문 사용)</h3>
+    <ul class="item-list">
+        {% for item in user["items"] %}
+            <li>
+                <strong>{{ item.index }}.</strong>
+                {{ item.name }} - 가격: ${{ item.price }}
+            </li>
+        {% endfor %}
+    </ul>
+    <p>템플릿 엔진 테스트: {{ "이 문장은 대문자로 바뀝니다." | upper }}</p>
+
+{% endblock %}
